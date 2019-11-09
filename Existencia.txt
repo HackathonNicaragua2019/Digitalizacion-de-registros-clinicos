@@ -1,0 +1,21 @@
+CREATE TABLE Existencia
+(
+Nombre_de_Medicamento varchar(20) primary key;
+Existencias int(10)
+)engine=InnoDB;
+
+CREATE TABLE Salidas
+(
+Fecha_de_Salida date,
+Nombre_de_Medicamento varchar(20),
+Cantidad int,
+foreign key (Nombre_de_Medicamento) references Existencia (Nombre_de_Medicamento) on delete cascade on update cascade
+)engine=InnoDB;
+
+CREATE TABLE Entradas
+(
+Fecha_de_Salida date,
+Nombre_de_Medicamento varchar(20),
+Cantidad int
+foreign key (Nombre_de_Medicamento) references Existencia (Nombre_de_Medicamento) on delete cascade on update cascade
+)engine=InnoDB;

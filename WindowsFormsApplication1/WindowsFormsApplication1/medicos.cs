@@ -37,9 +37,28 @@ namespace WindowsFormsApplication1
             lblnombre.Text = carrito.Tables[0].Rows[0]["nombre"].ToString();
             lblfuncion.Text = carrito.Tables[0].Rows[0]["funcion"].ToString();
             lblespecialidad.Text = carrito.Tables[0].Rows[0]["especialidad"].ToString();
-            lbldireccion.Text = carrito.Tables[0].Rows[0]["direccion"].ToString();
+            //lbldireccion.Text = carrito.Tables[0].Rows[0]["direccion"].ToString();
             lblcodigo.Text = carrito.Tables[0].Rows[0]["cod_minsa"].ToString();
             lbltelefono.Text = carrito.Tables[0].Rows[0]["n_telefono"].ToString();
+        }
+
+        private void cerrar_Click(object sender, EventArgs e)
+        {
+            inicio login = new inicio();
+            this.Close();
+            login.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Cambiar_contraseña chance = new Cambiar_contraseña();
+            chance.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            cambiar_usuario username = new cambiar_usuario();
+            username.Show();
         }
     }
 }

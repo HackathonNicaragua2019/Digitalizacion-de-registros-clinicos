@@ -57,7 +57,7 @@ namespace WindowsFormsApplication1
                             this.Hide();
                             enfermero.Show();
                             ; break;
-                        case "administrador":
+                       case "administrador":
                             administracion admon = new administracion();
                             this.Hide();
                             admon.Show();
@@ -67,17 +67,25 @@ namespace WindowsFormsApplication1
                             this.Hide();
                             balance.Show();
                             ; break;
-                    }
+                                         }
                 }
 
             }
-            catch (Exception error)
+            catch (Exception)
             {
-                MessageBox.Show("usuario o contraseña incorrecta " + error);//saco vacio se dobla
-                                                                            //ya comi ahora puedo seguir
+                MessageBox.Show("usuario o contraseña incorrecta " );//saco vacio se dobla
+                textBox1.ResetText();
+                textBox2.ResetText();//ya comi ahora puedo seguir
 
             }
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Focus();
+            textBox1.ResetText();
+            textBox2.ResetText();
         }
     }
 }

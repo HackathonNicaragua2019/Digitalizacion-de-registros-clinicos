@@ -32,7 +32,7 @@ namespace WindowsFormsApplication1
             else
             {
                 DialogResult = DialogResult.OK;
-                Close();
+         
             }
         }
 

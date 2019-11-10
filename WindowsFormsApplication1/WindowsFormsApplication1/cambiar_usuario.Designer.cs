@@ -42,7 +42,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(227, 39);
+            this.label1.Location = new System.Drawing.Point(146, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(186, 18);
             this.label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(87, 107);
+            this.label2.Location = new System.Drawing.Point(87, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 18);
             this.label2.TabIndex = 1;
@@ -60,32 +60,34 @@
             // lblok
             // 
             this.lblok.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblok.Location = new System.Drawing.Point(323, 107);
+            this.lblok.Location = new System.Drawing.Point(265, 67);
             this.lblok.Name = "lblok";
-            this.lblok.Size = new System.Drawing.Size(165, 18);
+            this.lblok.Size = new System.Drawing.Size(165, 26);
             this.lblok.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 182);
+            this.label4.Location = new System.Drawing.Point(18, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(241, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Confirmar nuevo nombre de usuario";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(88, 147);
+            this.label5.Location = new System.Drawing.Point(88, 98);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(171, 18);
             this.label5.TabIndex = 4;
             this.label5.Text = "Nuevo nombre de usuario";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(101, 246);
+            this.button1.Location = new System.Drawing.Point(53, 184);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 35);
             this.button1.TabIndex = 5;
@@ -95,7 +97,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(313, 246);
+            this.button2.Location = new System.Drawing.Point(231, 184);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(158, 35);
             this.button2.TabIndex = 6;
@@ -105,14 +107,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(323, 144);
+            this.textBox1.Location = new System.Drawing.Point(265, 98);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(165, 25);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(323, 182);
+            this.textBox2.Location = new System.Drawing.Point(265, 127);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(165, 25);
             this.textBox2.TabIndex = 8;
@@ -122,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(582, 362);
+            this.ClientSize = new System.Drawing.Size(468, 238);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);

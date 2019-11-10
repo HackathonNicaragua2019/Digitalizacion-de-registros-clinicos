@@ -37,5 +37,19 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void buscarExpedienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            consultar_pacientes cp = new consultar_pacientes();
+                cp.MdiParent = this;
+            cp.Show();
+        }
+
+        private void selccionarHisttorialPorRangoDeFechasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sintomas sin = new sintomas();
+            sin.MdiParent = this;
+            sin.Show();
+        }
     }
 }

@@ -28,7 +28,8 @@ namespace cconectar
             llenado = utilidades.ejecutar(solicitud);
             return llenado;
         }
-        public static DateTime fecha= DateTime.Now;
+       
+
 
     }
     

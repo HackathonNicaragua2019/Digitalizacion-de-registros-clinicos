@@ -64,6 +64,12 @@
     <Compile Include="Atender_consultas.Designer.cs">
       <DependentUpon>Atender_consultas.cs</DependentUpon>
     </Compile>
+    <Compile Include="buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscar.Designer.cs">
+      <DependentUpon>buscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="consultar_medicamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,13 +152,31 @@
     <Compile Include="medicos.Designer.cs">
       <DependentUpon>medicos.cs</DependentUpon>
     </Compile>
+    <Compile Include="perfil_paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="perfil_paciente.Designer.cs">
+      <DependentUpon>perfil_paciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rango.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rango.Designer.cs">
+      <DependentUpon>rango.cs</DependentUpon>
+    </Compile>
     <Compile Include="salidas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="salidas.Designer.cs">
       <DependentUpon>salidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sintomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sintomas.Designer.cs">
+      <DependentUpon>sintomas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Agendar_consultas.resx">
       <DependentUpon>Agendar_consultas.cs</DependentUpon>
@@ -162,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Atender_consultas.resx">
       <DependentUpon>Atender_consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscar.resx">
+      <DependentUpon>buscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cambiar_contraseña.resx">
       <DependentUpon>Cambiar_contraseña.cs</DependentUpon>
@@ -199,6 +226,9 @@
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="perfil_paciente.resx">
+      <DependentUpon>perfil_paciente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -208,8 +238,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rango.resx">
+      <DependentUpon>rango.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="salidas.resx">
       <DependentUpon>salidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sintomas.resx">
+      <DependentUpon>sintomas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="depositoDataSet.xsc">
       <DependentUpon>depositoDataSet.xsd</DependentUpon>

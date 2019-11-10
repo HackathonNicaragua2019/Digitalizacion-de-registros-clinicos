@@ -34,7 +34,7 @@ namespace WindowsFormsApplication1
         private void button6_Click(object sender, EventArgs e)
         {
             inicio login = new inicio();
-            this.Close();
+            this.Hide();
             login.Show();
         }
 
@@ -53,6 +53,61 @@ namespace WindowsFormsApplication1
         private void administracion_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblnombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblusuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbldireccion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblfuncion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblespecialidad_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

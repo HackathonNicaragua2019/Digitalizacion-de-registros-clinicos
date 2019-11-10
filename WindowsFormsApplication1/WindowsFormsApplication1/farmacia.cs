@@ -55,6 +55,7 @@ namespace WindowsFormsApplication1
         {
             consultar_medicamentos ver = new consultar_medicamentos();
             ver.Show();
+            this.Hide();
         }
 
         private void farmacia_FormClosed(object sender, FormClosedEventArgs e)
@@ -67,6 +68,13 @@ namespace WindowsFormsApplication1
             entradas_salidas entry = new entradas_salidas();
             entry.Show();
             this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            cambiar_usuario chance = new cambiar_usuario();
+            this.Hide();
+            chance.Show();
         }
     }
 }

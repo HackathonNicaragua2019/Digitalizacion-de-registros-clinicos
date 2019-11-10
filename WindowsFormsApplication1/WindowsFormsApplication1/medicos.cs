@@ -78,6 +78,15 @@ namespace WindowsFormsApplication1
         {
             Atender_consultas atc = new Atender_consultas();
             atc.Show();
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            buscar  h= new WindowsFormsApplication1.buscar();
+            h.Show();
+            this.Hide();
         }
     }
 }

@@ -37,7 +37,7 @@ private void ingresosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             consultar_medicamentos cm = new consultar_medicamentos();
             cm.Show();
-            this.Show();
+            Hide();
            
         }
 
@@ -50,10 +50,20 @@ private void ingresosToolStripMenuItem_Click(object sender, EventArgs e)
 
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             inicio init = new inicio();
             init.Show();
 
+        }
+
+        private void entradas_salidas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void entradas_salidas_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

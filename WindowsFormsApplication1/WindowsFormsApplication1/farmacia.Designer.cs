@@ -52,7 +52,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(590, 378);
+            this.button6.Location = new System.Drawing.Point(590, 392);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(157, 39);
             this.button6.TabIndex = 62;
@@ -62,7 +62,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(590, 328);
+            this.button5.Location = new System.Drawing.Point(590, 330);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(157, 39);
             this.button5.TabIndex = 61;
@@ -87,6 +87,7 @@
             this.button3.TabIndex = 59;
             this.button3.Text = "Despachos e ingresos";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -256,6 +257,7 @@
             this.Controls.Add(this.label1);
             this.Name = "farmacia";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.farmacia_FormClosed);
             this.Load += new System.EventHandler(this.farmacia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

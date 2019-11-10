@@ -49,5 +49,10 @@ namespace WindowsFormsApplication1
             cambiar_usuario username = new cambiar_usuario();
             username.Show();
         }
+
+        private void administracion_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

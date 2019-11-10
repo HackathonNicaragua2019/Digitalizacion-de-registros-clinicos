@@ -57,5 +57,17 @@ namespace WindowsFormsApplication1
             this.Close();
             pac.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Agendar_consultas ac = new Agendar_consultas();
+            ac.Show();
+        }
+
+        private void enfermeria_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

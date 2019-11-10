@@ -35,5 +35,21 @@ namespace WindowsFormsApplication1
                 Close();
             }
         }
+
+        private void consultar_medicamentos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox1.Text.Trim()) == false)
+            {
+                DataSet consulta;
+                string cmd = "select * from medicamentos where nombre like ('%" + textBox1.Text.Trim() + "%')";
+                consulta = utilidades.ejecutar(cmd);
+                dataGridView1.DataSource = consulta.Tables[0];
+            }
+        }
     }
 }

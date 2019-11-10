@@ -33,7 +33,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.lblespecialidad = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -51,7 +50,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(636, 406);
+            this.button6.Location = new System.Drawing.Point(612, 354);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(157, 39);
             this.button6.TabIndex = 83;
@@ -61,7 +60,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(636, 356);
+            this.button5.Location = new System.Drawing.Point(612, 309);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(157, 39);
             this.button5.TabIndex = 82;
@@ -71,7 +70,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(636, 306);
+            this.button4.Location = new System.Drawing.Point(612, 264);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(157, 39);
             this.button4.TabIndex = 81;
@@ -81,7 +80,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(636, 256);
+            this.button3.Location = new System.Drawing.Point(612, 219);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(157, 39);
             this.button3.TabIndex = 80;
@@ -90,21 +89,12 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(636, 206);
+            this.button2.Location = new System.Drawing.Point(612, 174);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(157, 39);
             this.button2.TabIndex = 79;
             this.button2.Text = "Administrar usuarios";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(636, 156);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 39);
-            this.button1.TabIndex = 78;
-            this.button1.Text = "configurar mi perfil";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -230,7 +220,6 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.lblespecialidad);
             this.Controls.Add(this.label13);
@@ -246,6 +235,7 @@
             this.Controls.Add(this.label1);
             this.Name = "administracion";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.administracion_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,7 +249,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lblespecialidad;
         private System.Windows.Forms.Label label13;

@@ -93,10 +93,9 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void medicos_FormClosed(object sender, FormClosedEventArgs e)
+        private void inicio_FormClosed(object sender, FormClosedEventArgs e)
         {
-            inicio h = new inicio();//posdata me pesa el estomago; pero muy rica la comida...:V
-            h.Close();
+
         }
     }
 }

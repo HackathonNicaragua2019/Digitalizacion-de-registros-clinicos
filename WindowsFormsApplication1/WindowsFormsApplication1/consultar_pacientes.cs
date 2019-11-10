@@ -31,9 +31,7 @@ namespace WindowsFormsApplication1
         private void consultar_pacientes_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = utilidades.llenarDTW("pacientes").Tables[0];
-            string solicitud = string.Format("select * from usuarios where n_usuario='{0}'", inicio.global);
-            DataSet carrito = utilidades.ejecutar(solicitud);
-            lblusuario.Text = carrito.Tables[0].Rows[0]["nombre"].ToString();
+           
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -43,7 +41,13 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (string.IsNullOrEmpty(textBox1.Text.Trim()) == false)
+            {
+                DataSet consulta;
+                string cmd = "select * from pacientes where nombre like ('%" + textBox1.Text.Trim() + "%')";
+                consulta = utilidades.ejecutar(cmd);
+                dataGridView1.DataSource = consulta.Tables[0];
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,6 +55,11 @@ namespace WindowsFormsApplication1
             this.Close();
             enfermeria enfermero = new enfermeria();
             enfermero.Show();
+        }
+
+        private void consultar_pacientes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

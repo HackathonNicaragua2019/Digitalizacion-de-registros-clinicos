@@ -49,7 +49,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -187,9 +186,9 @@
             // 
             // cerrar
             // 
-            this.cerrar.Location = new System.Drawing.Point(603, 362);
+            this.cerrar.Location = new System.Drawing.Point(604, 353);
             this.cerrar.Name = "cerrar";
-            this.cerrar.Size = new System.Drawing.Size(157, 39);
+            this.cerrar.Size = new System.Drawing.Size(226, 39);
             this.cerrar.TabIndex = 47;
             this.cerrar.Text = "Cerrar sesión";
             this.cerrar.UseVisualStyleBackColor = true;
@@ -197,9 +196,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(603, 305);
+            this.button5.Location = new System.Drawing.Point(604, 296);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(157, 39);
+            this.button5.Size = new System.Drawing.Size(226, 39);
             this.button5.TabIndex = 46;
             this.button5.Text = "Cambiar contraseña";
             this.button5.UseVisualStyleBackColor = true;
@@ -207,9 +206,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(603, 255);
+            this.button4.Location = new System.Drawing.Point(604, 246);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(157, 39);
+            this.button4.Size = new System.Drawing.Size(226, 39);
             this.button4.TabIndex = 45;
             this.button4.Text = "Cambiar nombre de usuario";
             this.button4.UseVisualStyleBackColor = true;
@@ -217,43 +216,34 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(603, 205);
+            this.button3.Location = new System.Drawing.Point(604, 196);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(157, 39);
+            this.button3.Size = new System.Drawing.Size(226, 39);
             this.button3.TabIndex = 44;
-            this.button3.Text = "Administrar pacientes";
+            this.button3.Text = "Atender consultas";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(603, 155);
+            this.button2.Location = new System.Drawing.Point(604, 146);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 39);
+            this.button2.Size = new System.Drawing.Size(226, 39);
             this.button2.TabIndex = 43;
             this.button2.Text = "Ver  atenciones ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(603, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 39);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "Actualizar mi perfil";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // medicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1354, 655);
+            this.ClientSize = new System.Drawing.Size(1362, 655);
             this.Controls.Add(this.cerrar);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.lblespecialidad);
             this.Controls.Add(this.label13);
@@ -275,6 +265,7 @@
             this.Name = "medicos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Atención de la población";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.medicos_FormClosed);
             this.Load += new System.EventHandler(this.medicos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -303,6 +294,5 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
     }
 }

@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agendar_consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agendar_consultas.Designer.cs">
+      <DependentUpon>Agendar_consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="atender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="atender.Designer.cs">
+      <DependentUpon>atender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Atender_consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atender_consultas.Designer.cs">
+      <DependentUpon>Atender_consultas.cs</DependentUpon>
+    </Compile>
     <Compile Include="consultar_medicamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +81,16 @@
     </Compile>
     <Compile Include="consulta_atenciones.Designer.cs">
       <DependentUpon>consulta_atenciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="depositoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>depositoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="depositoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>depositoDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="emfermeria.cs">
       <SubType>Form</SubType>
@@ -94,6 +122,18 @@
     <Compile Include="cambiar_usuario.Designer.cs">
       <DependentUpon>cambiar_usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="entradas_salidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="entradas_salidas.Designer.cs">
+      <DependentUpon>entradas_salidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="entradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="entradas.Designer.cs">
+      <DependentUpon>entradas.cs</DependentUpon>
+    </Compile>
     <Compile Include="inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +148,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="salidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salidas.Designer.cs">
+      <DependentUpon>salidas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Agendar_consultas.resx">
+      <DependentUpon>Agendar_consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="atender.resx">
+      <DependentUpon>atender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atender_consultas.resx">
+      <DependentUpon>Atender_consultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cambiar_contraseña.resx">
       <DependentUpon>Cambiar_contraseña.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +187,12 @@
     <EmbeddedResource Include="cambiar_usuario.resx">
       <DependentUpon>cambiar_usuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="entradas_salidas.resx">
+      <DependentUpon>entradas_salidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="entradas.resx">
+      <DependentUpon>entradas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="medicos.resx">
       <DependentUpon>medicos.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +208,31 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="salidas.resx">
+      <DependentUpon>salidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="depositoDataSet.xsc">
+      <DependentUpon>depositoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="depositoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>depositoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="depositoDataSet.xss">
+      <DependentUpon>depositoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="depositoDataSet1.xsc">
+      <DependentUpon>depositoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="depositoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>depositoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="depositoDataSet1.xss">
+      <DependentUpon>depositoDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

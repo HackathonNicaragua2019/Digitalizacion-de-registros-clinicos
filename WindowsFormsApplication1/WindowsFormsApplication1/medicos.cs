@@ -45,7 +45,7 @@ namespace WindowsFormsApplication1
         private void cerrar_Click(object sender, EventArgs e)
         {
             inicio login = new inicio();
-            this.Close();
+            this.Hide();
             login.Show();
         }
 
@@ -63,10 +63,21 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             consulta_atenciones at = new consulta_atenciones();
             at.Show();
 
+        }
+
+        private void medicos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Atender_consultas atc = new Atender_consultas();
+            atc.Show();
         }
     }
 }

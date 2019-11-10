@@ -24,10 +24,11 @@ namespace cconectar
         public static DataSet llenarDTW(string tabla)
         {
             DataSet llenado;
-            string solicitud = string.Format("Select * from "+ tabla);
+            string solicitud = string.Format("Select * from "+tabla);
             llenado = utilidades.ejecutar(solicitud);
             return llenado;
         }
+        public static DateTime fecha= DateTime.Now;
 
     }
     

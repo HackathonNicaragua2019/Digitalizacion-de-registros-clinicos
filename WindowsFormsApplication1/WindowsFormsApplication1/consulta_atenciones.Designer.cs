@@ -66,6 +66,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -126,6 +127,7 @@
             this.Controls.Add(this.label1);
             this.Name = "consulta_atenciones";
             this.Text = "consulta_atenciones";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.consulta_atenciones_FormClosed);
             this.Load += new System.EventHandler(this.consulta_atenciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -1,0 +1,2 @@
+C:\Users\Hackathon 2019\Desktop\Visual\ContendorPrincipal\ContendorPrincipal\bin\Debug\ContendorPrincipal.exe.config
+C:\Users\Hackathon2019\Downloads\ContendorPrincipal\ContendorPrincipal\bin\Debug\ContendorPrincipal.exe.config

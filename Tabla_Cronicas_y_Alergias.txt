@@ -1,0 +1,13 @@
+Create table ECronicas 
+(
+foreign key (ID) references Pacientes (ID); 
+Enf_Cronica char(30);
+TratamientoC char(50);	
+);
+
+Create table Alergias 
+(
+foreign key (ID) references Pacientes (ID); 
+Alergia char(30);
+TratamientoA char(50);	
+);

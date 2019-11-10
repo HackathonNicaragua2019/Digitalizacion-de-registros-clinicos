@@ -82,8 +82,21 @@ Cantidad int,
 foreign key (Nombre_de_Medicamento) references Existencia (Nombre_de_Medicamento) on delete cascade on update cascade
 )engine=InnoDB;
 
+CREATE TABLE Enfermedades_Cronicas
+(
+Enfermedad_Cronica varchar(25),
+Tratamiento varchar(50),
+ID_PC varchar(10),
+foreign key (ID_PC) references Pacientes (ID) on delete cascade on update cascade
+)engine=InnoDB;
 
-
+CREATE TABLE Alergias
+(
+Tipo_De_Alergia varchar(25),
+Tratamiento varchar(25),
+ID_Pc varchar(10),
+foreign key (ID_Pc) references Pacientes (ID) on delete cascade on update cascade
+)engine=InnoDB;
 
 
 
